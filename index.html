@@ -1,0 +1,237 @@
+<html>
+<head>
+<title>Chek</title>
+<link rel="stylesheet" href="css/animate.min.css">
+</head>
+<body>
+<style type="text/css">
+ body{
+ margin:0
+}
+ h1{
+ font-family: "Times New Roman", Times, serif;
+ font-size:40px;
+ color:#BF0E0E;
+ border:1px solid black;
+ border-radius:50px;
+ padding:10px 20px;
+ margin-top:20px;
+}
+
+img{
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-o-user-select: none;
+user-select: none;
+
+}
+img::selection 
+{
+    background-color:transparent;
+} 
+img::-moz-selection
+{
+    background-color:transparent;
+}
+*
+{        
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    /*IE10*/
+    -ms-user-select: none;
+    user-select: none;
+
+    /*You just need this if you are only concerned with android and not desktop browsers.*/
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}    
+
+p{
+ font-family: "Times New Roman", Times, serif;
+ color:black;
+ font-size:50px;
+
+}
+ 
+
+</style>
+
+</style>
+<!DOCTYPE html>
+<html>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.logo {
+  height: 30px;
+  position: relative;
+  top: 4px;
+}
+
+.menu-checkbox {
+  display: none;
+}
+
+.header {
+  width: 100%;
+  height: 100%;
+  
+  top: 0;
+  left: 0;
+  z-index: 101;
+  height: 50px;
+  background-color: #fff;
+  
+}
+
+.overlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.menu {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  z-index: 101;
+  visibility: hidden;
+  width: 280px;
+  height: 100%;
+  background: #fff;
+  color: white;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+ 
+}
+
+.menu-btn {
+  background-color: transparent;
+  border: none;
+  color: #222222;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1.6em;
+  position: relative;
+  padding: 0;
+  left: -8px;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.content {
+  margin-top: 60px;
+}
+
+.items {
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+}
+.items li {
+  list-style-type: none;
+  background-color: white;
+  border: 1px solid #dddddd;
+  border-bottom: 2px solid #dddddd;
+  min-height: 300px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.menu-checkbox:checked ~ .overlay {
+  display: block;
+}
+.menu-checkbox:checked ~ .menu {
+  visibility: visible;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.menu-checkbox:checked ~ .header .three-lines {
+  position: relative;
+  left: -3px;
+}
+a {
+   
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+a:hover, .offcanvas a:focus{
+    color: red;
+}
+.menu-btn::selection 
+{
+    background-color:transparent;
+} 
+.menu-btn::-moz-selection
+{
+    background-color:transparent;
+}
+*
+{        
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    /*IE10*/
+    -ms-user-select: none;
+    user-select: none;
+
+    /*You just need this if you are only concerned with android and not desktop browsers.*/
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}  
+</style>
+<body>
+
+<input class='menu-checkbox' id='menu-checkbox' type='checkbox'>
+<nav class='menu'>
+
+  <img src="images/botback.jpg" width="280px" height="150px" style="margin-top:-60px;">
+   <img src="images/icon.png" width="60px" height="60px" style="margin-top:-40px;margin-left:10px;">
+  <a href="sidemenu/about.html">About</a>
+  <a href="sidemenu/services.html">Services</a>
+  <a href="sidemenu/feedback.html">Feedback</a>
+  <a href="sidemenu/help.html">Help</a>
+  </nav>
+
+<label class='overlay' for='menu-checkbox'></label>
+<div class= 'header'  style="opacity: 0.7;" >
+<label class='menu-btn' for='menu-checkbox'>
+    &nbsp;&nbsp;<span class='three-lines'>&#8801;&nbsp;</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/icon.png"  width="25px" height="25px" style="">
+     
+</body>
+</html> 
+<center><h1 class="animated bounceIndown">Your Personal Assistant</h1>
+<a href="chek.html"><img src="images/icon.png"class="animated bounceIn" width="250px" height="250px"/></a>
+<p class="animated rotateIn">Chek</p>
+<p class="animated rollIn" style="font-size:15px; margin-top:0px; color:#1C519D;">Click on image to start your assistant</p>
+<p class="animated fadeInUp" style="font-size:15px; margin-top:0px;">© 2016 Chek all right reserved<br> Founder: Harendra Chhekur<br>Co-Founder: Sachin Seth</center>
+
+</body>
+</html>
