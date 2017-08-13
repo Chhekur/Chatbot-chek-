@@ -1,0 +1,217 @@
+<html>
+<head>
+<title>Chek</title>
+<link rel="stylesheet" href="css/animate.min.css">
+</head>
+<body>
+<style type="text/css">
+ body{
+ margin:0
+}
+ h1{
+ font-family: "Times New Roman", Times, serif;
+ font-size:20px;
+ color:#BF0E0E;
+ border:1px solid black;
+ border-radius:50px;
+ margin-top:60px;
+}
+
+img:focus {
+-webkit-user-select: none;
+			-moz-user-select: -moz-none;
+			-ms-user-select: none;
+			user-select: none;
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+			
+
+}
+img::selection 
+{
+    background-color:transparent;
+} 
+img::-moz-selection
+{
+    background-color:transparent;
+}
+*
+{        
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    /*IE10*/
+    -ms-user-select: none;
+    user-select: none;
+
+    /*You just need this if you are only concerned with android and not desktop browsers.*/
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}    
+
+
+
+p{
+ font-family: "Times New Roman", Times, serif;
+ color:black;
+ font-size:30px;
+
+
+}
+ 
+
+</style>
+<!DOCTYPE html>
+<html>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+ 
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+
+.menu-checkbox {
+  display: none;
+}
+
+.header {
+ 
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  height: 50px;
+  background-color: #fff;
+  
+}
+
+.overlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.menu {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  z-index: 101;
+  visibility: hidden;
+  width: 280px;
+  height: 100%;
+  background: #fff;
+  color: white;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+ 
+}
+
+.menu-btn {
+  background-color: transparent;
+  border: none;
+  color: #222222;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1.6em;
+  position: relative;
+  padding: 0;
+  left: -8px;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.menu-checkbox:checked ~ .overlay {
+  display: block;
+}
+.menu-checkbox:checked ~ .menu {
+  visibility: visible;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.menu-checkbox:checked ~ .header .three-lines {
+  position: relative;
+  left: -3px;
+}
+a {
+    
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+a:hover, .offcanvas a:focus{
+    color: red;
+}
+.menu-btn::selection 
+{
+    background-color:transparent;
+} 
+.menu-btn::-moz-selection
+{
+    background-color:transparent;
+}
+*
+{        
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    /*IE10*/
+    -ms-user-select: none;
+    user-select: none;
+
+    /*You just need this if you are only concerned with android and not desktop browsers.*/
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+ 
+</style>
+<body>
+
+<input class='menu-checkbox' id='menu-checkbox' type='checkbox'>
+<nav class='menu'>
+
+  <img src="images/botback.jpg" width="280px" height="150px" style="margin-top:-60px;">
+   <img src="images/icon.png" width="60px" height="60px" style="margin-top:-40px;margin-left:10px; background-color: White; border-radius: 10px;">
+  <a href="sidemenu/about.html"  style="padding: 8px 8px 8px 32px;">About</a>
+  <a href="sidemenu/services.html" style="padding: 8px 8px 8px 32px;">Services</a>
+  <a href="sidemenu/feedback.html" style="padding: 8px 8px 8px 32px;">Feedback</a>
+  <a href="sidemenu/help.html" style="padding: 8px 8px 8px 32px;">Help</a>
+ </nav>
+
+<label class='overlay' for='menu-checkbox'></label>
+<div class= 'header'  style="" >
+<label class='menu-btn' for='menu-checkbox'>
+    &nbsp;&nbsp;<span class='three-lines'>&#8801;&nbsp;</span></label><img src="images/icon.png"  width="25px" height="25px" style="float: right; margin-top: 5px;  margin-right: 4px;">
+
+
+</body>
+</html> 
+
+<center><h1 class="animated bounceIndown">Your Personal Assistant</h1><br><br><br>
+<a href="chek.html"><img src="images/icon.png"class="animated bounceIn" width="150px" height="150px"/></a>
+<p class="animated rotateIn">Chek</p>
+<p class="animated rollIn" style="font-size:15px; color:#1C519D;">Click on image to start your assistant</p>
+<p class="animated fadeInUp" style="font-size:11px;">© 2016 Chek all right reserved<br> Founder: Harendra Chhekur<br>Co-Founder: Sachin Seth</center>
+
+</body>
+</html>
