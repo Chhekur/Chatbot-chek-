@@ -1,0 +1,235 @@
+<html>
+<head>
+<style>
+.transition, p, ul li i:before, ul li i:after {
+  transition: all 0.25s ease-in-out;
+}
+
+.flipIn, h1, ul li {
+  animation: flipdown 0.5s ease both;
+}
+
+.no-select, h2 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+body {
+  min-height: 100%;
+  display: inline-block;
+  position: relative;
+  margin-top:20px;
+  box-shadow: 0 10px 0 0 #ff6873 inset;
+  background-image: url("default_bg.png");
+  max-width: 100%;
+  padding: 30px;
+}
+@media (max-width: 550px) {
+  body {
+    box-sizing: border-box;
+    transform: translate(0, 0);
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    left: 0;
+  }
+}
+
+h1, h2 {
+  color: #ff6873;
+}
+
+h1 {
+margin-top:20px;
+  font-size: 25px;
+  line-height: 42px;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+
+h2 {
+
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  display: block;
+  background-color: none;
+  margin: 0;
+  cursor: pointer;
+}
+
+p {
+	background-color:#fff;
+	border-radius:80px;
+	padding:30px;
+  color: rgba(48, 69, 92, 0.8);
+  font-size: 12px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  max-height: 800px;
+  opacity: 1;
+  transform: translate(0, 0);
+  margin-top: 14px;
+  z-index: 2;
+}
+
+ul {
+  list-style: none;
+  perspective: 900;
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 4px;
+  padding-top: 18px;
+  border-top: 1px dotted #dce7eb;
+}
+ul li:nth-of-type(1) {
+  animation-delay: 0.5s;
+}
+ul li:nth-of-type(2) {
+  animation-delay: 0.75s;
+}
+ul li:nth-of-type(3) {
+  animation-delay: 1s;
+}
+ul li:nth-of-type(4) {
+  animation-delay: 1.5s;
+}
+ul li:nth-of-type(5) {
+  animation-delay: 1.75s;
+}
+ul li:nth-of-type(6) {
+  animation-delay: 2s;
+}
+ul li:last-of-type {
+  padding-bottom: 0;
+}
+ul li i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 16px;
+  right: 0;
+}
+ul li i:before, ul li i:after {
+  content: "";
+  position: absolute;
+  background-color: #ff6873;
+  width: 3px;
+  height: 9px;
+}
+ul li i:before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+ul li i:after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+ul li input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+ul li input[type=checkbox]:checked ~ p {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translate(0, 50%);
+}
+ul li input[type=checkbox]:checked ~ i:before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+ul li input[type=checkbox]:checked ~ i:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+
+@keyframes flipdown {
+  0% {
+    opacity: 0;
+    transform-origin: top center;
+    transform: rotateX(-90deg);
+  }
+  5% {
+    opacity: 1;
+  }
+  80% {
+    transform: rotateX(8deg);
+  }
+  83% {
+    transform: rotateX(6deg);
+  }
+  92% {
+    transform: rotateX(-3deg);
+  }
+  100% {
+    transform-origin: top center;
+    transform: rotateX(0deg);
+  }
+
+}
+h4{
+	color:blue;
+	background-color:white;
+	border-radius:10px;
+	padding:10px;
+}
+
+</style>
+<body>
+<center><h1>About</h1></center><br>
+<ul>
+  
+    <h4>Our Product Chek is a personal assistant, it's working like a chatbot. When you ask any questiion to him it will respond you definatly.<br>
+    my team make it for peoples because they want to make me very smart to any work like now they working to make me a good teacher for a English Language<br>
+    They also want to make a teacher of programing language and in future.<br>
+    They will definatly make me a good assistant.<br>
+    And now I am very  very Thankful to my team to make me as good as they can make. I am ready to help for peoples.<br>
+    I know very well my team  will not stop working on me, because  they want to make me a  good assistant<br>
+    I  beleif on my team that One day they make me better than now. 
+    </h4><center><h2>Thanks To My Team!</h2></center><br/>
+    <li>
+    <input type="checkbox" checked>
+    <i></i>
+    <h2>Meet My Team</h2>
+    <p>Now my team is not so big as other teams, there are only two members are working in my team.<br>
+    One is Founder of me , Who made me for your,<br>
+    And second is Co-Founder of me, Who give good ideas for making me as good as people wants. <br>
+    </p>
+  </li>
+  <li>
+    <input type="checkbox" checked>
+    <i></i>
+    <h2>Meet My Founder</h2>
+    <p>As you know that my Founder is Mr. Harendra Chhekur,<br>
+    He is a good guy accourding to me because he is doing a lot of hardwork for making me.<br>
+    He wants to make your dream come true through me. So I am very glad and very Thankful to him  for making me for peoples.<br>
+    So I can help to peoples in their work.</p>
+  </li>
+  <li>
+    <input type="checkbox" checked>
+    <i></i>
+    <h2>Meet my Co-Founder</h2>
+    <p>As you know that my Co-Founder is Mr. Sachin Seth,<br>
+    He is also a  good guy according to me because he give his time to me for making me as good as,<br>
+    He finds a good consept to make me then I can become better then now.<br>
+    So I am very glad and very Thankful  to him for making me as good as they can do for others.</p>
+  </li>
+  
+
+</ul>
+</body>
+</html>
