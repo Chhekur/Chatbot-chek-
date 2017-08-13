@@ -1,0 +1,2 @@
+# Chatbot-chek-
+This is an chatbot, it is fully developed by HTML, CSS, and JavaScript,  now it's working fine as a web application and as well as android app, I am providing all the codes Web as well as android app, So you can easily modify in it according to you, And one more thing now I want to implement Self learning system (Machine learning) in it  for future reference that's by I am uploading this on github and I this that some developers will help me to implement machine learning in it.
