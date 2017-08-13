@@ -1,0 +1,188 @@
+
+        body{
+			
+			 position: fixed; 
+            background: url(default_bg.png);
+			background-size: 100% 100%;
+            width: 100%;
+			height:100%;
+		font-family:arial,sans-serif;
+		margin:0;
+		background-color:#f2f2f2;
+		}
+		#header{
+			font-family:arial,sans-serif;
+			position:absolute;
+			font-family:arial,sans-serif;
+			width:100%;
+			height:60px;
+			background-color:white;
+			
+		}
+	
+		#header h1{
+			font-family:arial,sans-serif;
+			font-family:arial,sans-serif;
+			padding:12px;
+			width:140px;
+			margin:0px auto;
+			color:white;
+		}	
+	
+		#container{
+			font-family:arial,sans-serif;
+			font-family:arial,sans-serif;
+			width:600px;
+			height:680px;
+			margin:0px auto;
+			margin-top:-50px;
+			
+			
+			overflow:scroll;
+		}
+		
+		#container::-webkit-scrollbar{
+			width:7px;
+		}
+		
+		#container::-webkit-scrollbar-thumb{
+			border-radius: 10px;
+			background:#ccc;
+			
+		}
+		
+		#controls{
+			width:1024px;
+			margin:0px auto;
+			
+		}
+		
+		#textbox{
+			font-family:arial,sans-serif;
+			box-shadow: 0 0 3px #333;
+			font-family:arial,sans-serif;
+			margin-top:-100px;
+		
+		}
+		
+		textarea{
+			font-family:arial,sans-serif;
+		background:white;
+		height:50px;
+		resize:none;
+		
+		width:50%;
+		border:none;
+		
+		border-radius:50px;
+		padding:10px 40px;
+		font-size:20px;
+		color:#333;
+		}
+		
+		textarea:focus{
+			color: #0b4ed6;  /* change [input cursor color] by this*/
+  text-shadow: 0px 0px 0px #D60B0B; /* change [input font] by this*/
+  -webkit-text-fill-color: transparent;
+			font-family:arial,sans-serif;
+			outline-width:0;
+			background:white;
+		}
+		
+		
+		#textbox::-webkit-scrollbar{
+			width:7px;
+			display:none;
+		}
+		
+		#textbox::-webkit-scrollbar-thumb{
+			border-radius: 10px;
+			background:white;
+			
+		}
+		
+		#send{
+			font-family:arial,sans-serif;
+		 margin-top:-88px;
+		 margin-left:-40px;
+		 background:none; 
+		 color:none;
+		 border:none;
+		 font-size:24px;
+		 position:absolute;
+		 border-radius:30px;
+		 cursor:pointer;
+		 
+		 
+		 -webkit-transition: background .2s ease;
+		 -moz-transition: background .2s ease;
+		 -o-transition: background .2s ease;
+		}
+		
+		#send:hover{
+			background:white;
+		}
+		
+		#send:focus{
+			outline-width:0;
+			
+		}
+		
+		.username{
+			font-family:arial,sans-serif;
+			width: 40px;
+			height: 40px;
+			background: url(user.png);
+			background-size: 100% 100%;
+			border-radius: 50%;
+			float:right;
+		}
+		
+		.username1{
+			margin-bottom:90px;
+			font-family:arial,sans-serif;
+			margin-right:5px;
+			color:white;
+			margin-top:5px;
+			padding:8px;
+			background:#FE6969;
+			border-radius: 15px;
+			float:right;
+			
+		}
+		
+		
+		.bot{
+			font-family:arial,sans-serif;
+			width: 40px;
+			height: 40px;
+			background: url(assistent.png);
+			background-size: 100% 100%;			
+			border-radius: 50%;
+			float:left;
+		}
+		
+		.bot1{
+			margin-bottom:90px;
+			font-family:arial,sans-serif;
+			
+			margin-left: 5px;
+			margin-top:5px;
+			padding:8px;
+			background:#EEEEEE;
+			border-radius: 15px;
+			float:left;
+		}
+		
+		
+		
+
+
+
+
+		
+		
+		
+		
+		
+		
